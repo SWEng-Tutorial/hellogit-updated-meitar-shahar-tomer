@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.ac.haifa.cs.sweng.HelloGit.PrimaryController">
 	<!-- TODO Add Nodes -->
 	<!--<Label> "Hi there, We are using Git ! ! ! "</Label>-->
 
@@ -14,7 +18,7 @@
 			<Font size="31.0" />
 		</font>
 	</Label>
-   <Label text="Meitar&amp;Shahar&amp;Tomer" textAlignment="CENTER" textFill="#b72887">
+   <Label fx:id="namesLB" text="Meitar&amp;Shahar&amp;Tomer" textAlignment="CENTER" textFill="#b72887" visible="false">
       <font>
          <Font name="System Bold Italic" size="24.0" />
       </font>
@@ -25,5 +29,24 @@
          <Insets />
       </VBox.margin>
    </Label>
+   <Button fx:id="visibleBtn" mnemonicParsing="false" onAction="#visibleNames" text="Click">
+      <effect>
+         <Lighting bumpInput="$null">
+            <light>
+               <Light.Distant>
+                  <color>
+                     <Color red="0.9117283821105957" green="0.4703703820705414" blue="1.0" />
+                  </color>
+               </Light.Distant>
+            </light>
+         </Lighting>
+      </effect>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+   </Button>
 
 </VBox>

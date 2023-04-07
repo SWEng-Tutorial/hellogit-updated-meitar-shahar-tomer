@@ -10,6 +10,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
+
 public class PrimaryController {
 
     @FXML
@@ -24,7 +28,16 @@ public class PrimaryController {
     	dialogStage.setScene(scene);
     	dialogStage.show();
     }
-    
+	@FXML
+	private Label namesLB;
+
+	@FXML
+	private Button visibleBtn;
+
+	@FXML
+	void visibleNames(ActionEvent event) {
+     namesLB.setVisible(true);
+	}
     // Pay attention to this example - You don't have to specify parameters on event handlers.
     @FXML
     void closeApp() {
