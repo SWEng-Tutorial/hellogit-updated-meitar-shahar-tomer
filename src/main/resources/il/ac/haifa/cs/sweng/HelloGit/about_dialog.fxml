@@ -18,6 +18,7 @@
 			<Font size="31.0" />
 		</font>
 	</Label>
+   <Label prefHeight="23.0" prefWidth="41.0" text="shahar" />
    <Label fx:id="namesLB" text="Meitar&amp;Shahar&amp;Tomer" textAlignment="CENTER" textFill="#b72887" visible="false">
       <font>
          <Font name="System Bold Italic" size="24.0" />
