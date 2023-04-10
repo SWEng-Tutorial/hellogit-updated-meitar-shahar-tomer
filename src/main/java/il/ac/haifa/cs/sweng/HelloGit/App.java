@@ -11,7 +11,6 @@ import java.io.IOException;
 /**
  * JavaFX App
  */
-
 public class App extends Application {
 
     private static Scene scene;
@@ -36,5 +35,4 @@ public class App extends Application {
         launch();
     }
 
-    private int j;
 }
