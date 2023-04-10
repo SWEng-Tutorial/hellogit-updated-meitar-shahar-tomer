@@ -30,6 +30,8 @@ public class PrimaryController {
     }
 	@FXML
 	private Label namesLB;
+	@FXML
+	private Label namesLB1;
 
 	private  int x=4;
 
@@ -39,6 +41,7 @@ public class PrimaryController {
 	@FXML
 	void visibleNames(ActionEvent event) {
      namesLB.setVisible(true);
+	 namesLB1.setVisible(true);
 	}
     // Pay attention to this example - You don't have to specify parameters on event handlers.
     @FXML
