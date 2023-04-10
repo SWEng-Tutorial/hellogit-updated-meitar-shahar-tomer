@@ -31,6 +31,8 @@ public class PrimaryController {
 	@FXML
 	private Label namesLB;
 
+	private  int x;
+
 	@FXML
 	private Button visibleBtn;
 
